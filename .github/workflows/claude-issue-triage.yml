@@ -94,6 +94,18 @@ jobs:
                Sé concreto y conciso: este diagnóstico se usará después para implementar la
                solución en código.
 
+            Formato obligatorio de `.triage/diagnosis.md`: este archivo se publicará tal cual
+            como comentario del issue, así que DEBE ser GitHub Flavored Markdown (GFM) válido
+            y renderizable por GitHub:
+            - Usa encabezados `###`, listas con `-` o numeradas (`1.`), **negritas** y `código en línea`.
+            - Encierra todo fragmento de código en bloques con triple backtick y lenguaje
+              (```js, ```css, ```html, ```diff).
+            - Para criterios de aceptación usa listas de tareas GFM (`- [ ] criterio`).
+            - Referencia archivos como `archivo:línea` entre backticks.
+            - No uses HTML (salvo `<details>` si hace falta), ni imágenes, ni enlaces inventados.
+            - No incluyas texto fuera del Markdown (sin preámbulos como "Aquí está el diagnóstico")
+              ni envuelvas todo el archivo en un bloque de código.
+
             No modifiques ningún otro archivo.
 
       - name: Apply labels
